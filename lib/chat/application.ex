@@ -9,7 +9,8 @@ defmodule Chat.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      ChatWeb.Endpoint
+      ChatWeb.Endpoint,
+      ChatWeb.Presence
       # Starts a worker by calling: Chat.Worker.start_link(arg)
       # {Chat.Worker, arg},
     ]

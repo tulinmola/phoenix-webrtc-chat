@@ -1,35 +1,34 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed and maintainability.</p>
-</section>
+<div id="videos">
+  <div class="video">
+    <label for="local-video">Local Video Stream</label>
+    <video id="local-video" autoplay playsinline></video>
+  </div>
+</div>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
-</section>
+<ul id="users" class="users"></ul>
+
+<div class="actions">
+  <div class="field">
+    <label for="video-input">Video Input</label>
+    <select id="video-input"></select>
+  </div>
+
+  <div class="field">
+    <label for="audio-input">Audio Input</label>
+    <select id="audio-input"></select>
+  </div>
+
+  <div class="field">
+    <label for="audio-output">Audio Output</label>
+    <select id="audio-output"></select>
+  </div>
+
+  <button id="connect">Connect</button>
+</div>
+
+<%# <label for="remote-stream">Remote Video Stream</label>
+<video id="remote-stream" autoplay></video>
+
+<button id="connect">Connect</button>
+<button id="call">Call</button>
+<button id="disconnect">Disconnect</button> %>

@@ -1,4 +1,35 @@
 body {
   background-color: #fff;
   color: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.video {
+  display: inline-block;
+  padding: 8px;
+}
+
+.field {
+  margin-bottom: 8px;
+
+  label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+label, video {
+  display: block;
+}
+
+video {
+  border: 1px solid #aaa;
+}
+
+.actions {
+  padding: 8px;
 }
