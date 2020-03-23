@@ -16,6 +16,8 @@
     <script>
       window.user_id = "<%= Map.get(@conn.params, "user_id", "guest") %>";
     </script>
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

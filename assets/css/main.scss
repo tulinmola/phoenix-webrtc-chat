@@ -11,6 +11,7 @@ body {
 .video {
   display: inline-block;
   padding: 8px;
+  width: 320px;
 }
 
 .field {
@@ -28,6 +29,9 @@ label, video {
 
 video {
   border: 1px solid #aaa;
+  transform: scale(-1, 1);
+  width: 100% !important;
+  height: auto !important;
 }
 
 .actions {

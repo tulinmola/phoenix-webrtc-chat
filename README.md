@@ -4,9 +4,10 @@ To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Install Node.js dependencies with `cd assets && npm install`
+  * Create development HTTPS certificates (needed for mobile development support) with `mix phx.gen.cert`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4009`](http://localhost:4009) from your browser.
+Now you can visit [`http://localhost:4009`](http://localhost:4009) or [`https://localhost:4010`](https://localhost:4010) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 

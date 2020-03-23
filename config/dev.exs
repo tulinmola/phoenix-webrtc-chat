@@ -8,6 +8,12 @@ use Mix.Config
 # with webpack to recompile .js and .css sources.
 config :chat, ChatWeb.Endpoint,
   http: [port: 4009],
+  https: [
+    port: 4010,
+    cipher_suite: :strong,
+    certfile: "priv/cert/selfsigned.pem",
+    keyfile: "priv/cert/selfsigned_key.pem"
+  ],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

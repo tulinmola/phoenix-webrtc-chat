@@ -4,6 +4,9 @@
 # Elixir LS
 .elixir_ls
 
+# Certificates
+/priv/cert/
+
 # The directory Mix will write compiled artifacts to.
 /_build/
 

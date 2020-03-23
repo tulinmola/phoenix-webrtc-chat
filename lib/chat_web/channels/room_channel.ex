@@ -7,7 +7,7 @@ defmodule ChatWeb.RoomChannel do
   @type socket :: Phoenix.Socket.t()
 
   @impl true
-  @spec join(topic, map, socket) :: {:ok, socket}
+  @spec join(topic, map, socket) :: {:ok, map, socket}
   def join("room:lobby", _payload, socket) do
     send(self(), :after_join)
     uuid = UUID.uuid4()
@@ -19,8 +19,8 @@ defmodule ChatWeb.RoomChannel do
 
   @impl true
   @spec handle_in(event, map, socket) :: {:noreply, socket}
-  def handle_in("peer-message", %{"body" => body}, socket) do
-    broadcast_from!(socket, "peer-message", %{body: body})
+  def handle_in("peer-message", message, socket) do
+    broadcast_from!(socket, "peer-message", message)
     {:noreply, socket}
   end
 
